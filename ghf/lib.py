@@ -47,6 +47,12 @@ def clean_data(data):
     data.loc[:, 'Frequency'] = data['Frequency'].map(drows)
     return data
 
+def try_me(age):
+    """input your age, and get how many weeks you have left to live in return"""
+    average_life = 4420
+    your_weeks = age * 52
+    weeks_left = average_life - your_weeks
+    return weeks_left
 
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
